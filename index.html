@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'game-primary': '#E87C65',
+            'game-secondary': '#7CC9D6',
+            'game-tertiary': '#8B5E3C',
+            'game-bg': '#2A4858',
+            'game-ui-base': '#9B8B7A',
+            'game-ui-darker': '#786D5F',
+            'game-text': '#2A2420',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-game-bg h-screen p-4 flex items-center justify-center">
+  <div class="relative w-full max-w-4xl h-full rounded-lg overflow-hidden">
+    <!-- Game Viewport -->
+    <div class="absolute inset-0">
+      <div class="absolute bottom-0 w-full p-4">
+        <!-- Bottom UI Panel -->
+        <div class="bg-game-ui-base/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+          <div class="grid grid-cols-12 gap-4">
+            <!-- Character Section -->
+            <div class="col-span-3">
+              <div class="bg-game-ui-darker rounded-lg p-3">
+                <div class="flex items-center space-x-2 mb-4">
+                  <div class="relative top-[-20px] w-16 h-16 bg-gray-700 rounded-lg"></div>
+                  <div class="space-y-2">
+                    <div class="flex space-x-2">
+                      <div class="relative top-[-5px] w-8 h-8 bg-green-600 rounded-full"></div>
+                      <div class="relative top-[-5px] w-8 h-8 bg-red-600 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="text-white text-sm font-bold">SKILLS</div>
+                  <div class="w-full h-2 bg-gray-600 rounded">
+                    <div class="w-3/4 h-full bg-game-secondary rounded"></div>
+                  </div>
+                  <div class="text-white text-sm font-bold">STATS</div>
+                  <div class="space-y-1">
+                    <div class="w-full h-2 bg-gray-600 rounded">
+                      <div class="w-1/2 h-full bg-green-400 rounded"></div>
+                    </div>
+                    <div class="w-full h-2 bg-gray-600 rounded">
+                      <div class="w-2/3 h-full bg-yellow-400 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dialog Section -->
+            <div class="col-span-6">
+              <div class="bg-game-ui-darker/50 rounded-lg p-4">
+                <div class="text-white space-y-4">
+                  <p>The scene is set in a mysterious forest... lorem ipsum delor sit amet delore lorem...</p>
+                  <button class="bg-game-ui-darker hover:bg-game-ui-base text-white px-6 py-2 rounded-lg w-full transition-colors">
+                    Actions
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="col-span-3">
+              <div class="grid grid-cols-3 gap-2">
+                <button class="bg-game-ui-darker hover:bg-game-ui-base w-12 h-12 rounded-lg transition-colors"></button>
+                <button class="bg-game-ui-darker hover:bg-game-ui-base w-12 h-12 rounded-lg transition-colors"></button>
+                <button class="bg-game-ui-darker hover:bg-game-ui-base w-12 h-12 rounded-lg transition-colors"></button>
+                <button class="bg-game-ui-darker hover:bg-game-ui-base w-12 h-12 rounded-lg transition-colors"></button>
+                <button class="bg-game-primary hover:brightness-110 w-12 h-12 rounded-lg transition-all"></button>
+                <button class="bg-game-secondary hover:brightness-110 w-12 h-12 rounded-lg transition-all"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
