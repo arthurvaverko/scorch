@@ -44,9 +44,9 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 		},
 		Character: Character{
 			Name:    "John Constantine",
-			HP:      100,
+			HP:      80,
 			MaxHP:   100,
-			Mana:    75,
+			Mana:    54,
 			MaxMana: 100,
 		},
 	}

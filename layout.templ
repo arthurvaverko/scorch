@@ -67,10 +67,16 @@ templ characterStats(char Character) {
         </div>
 
         <div class="w-full">
-            @statBar("HP", char.HP, char.MaxHP, "var(--game-primary)")
-            @statBar("Mana", char.Mana, char.MaxMana, "var(--game-secondary)")
+            @statBar("HP", char.HP, char.MaxHP, "#E87C65")
+            @statBar("Mana", char.Mana, char.MaxMana, "#7CC9D6")
         </div>
     </div>
+}
+
+
+css statBarFill(percent float32, color string) {
+	width: { templ.SafeCSSProperty(fmt.Sprintf("%v%%", percent)) };
+    background-color: {templ.SafeCSSProperty(color)};
 }
 
 templ statBar(label string, current int, max int, color string) {
@@ -79,11 +85,8 @@ templ statBar(label string, current int, max int, color string) {
             <span class="text-xs text-white">{ label }: { fmt.Sprint(current) }/{ fmt.Sprint(max) }</span>
         </div>
         <div class="w-full h-3 bg-black/20 rounded-full overflow-hidden">
-            % width := fmt.Sprintf("%d%%", current * 100 / max)
-            % backgroundColor := color
             <div 
-                class="h-full transition-all duration-300"
-                style="width: {width}; background-color: {backgroundColor};"
+                class={"h-full", "transition-all", "duration-300", statBarFill((float32(current) / float32(max) * 100), color)}
             ></div>
         </div>
     </div>
