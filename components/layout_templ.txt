@@ -1,0 +1,23 @@
+<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Adventure Game</title><script src=\"https://cdn.tailwindcss.com\"></script><style>\n            html {\n                --game-primary: #E87C65;\n                --game-secondary: #7CC9D6;\n                --game-tertiary: #8B5E3C;\n                --game-bg: #2A4858;\n                --game-ui-base: #9B8B7A;\n                --game-ui-darker: #786D5F;\n            }\n        </style></head><body>
+</body></html>
+<div class=\"min-h-screen flex flex-col p-3 max-w-md mx-auto\" style=\"background-color: var(--game-ui-base)\">
+<div class=\"grid grid-cols-2 gap-3 mt-6\">
+</div></div>
+<div class=\"mb-2 space-y-0.5 rounded-lg p-4\" style=\"background-color: var(--game-ui-darker)\">
+<p class=\"text-base leading-snug text-white font-medium\">
+</p>
+</div>
+<div class=\"flex-1 mb-3 mx-3 relative h-[50vh]\"><div class=\"absolute inset-0 flex items-center justify-center overflow-hidden rounded-lg\"><img src=\"https://fastly.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ\" alt=\"Current scene\" class=\"w-full h-full object-cover\"><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--game-ui-base)]\"></div></div></div>
+<div class=\"p-4 flex flex-col items-center relative rounded-lg\" style=\"background-color: var(--game-ui-darker)\"><div class=\"absolute -top-6 w-28 h-28\"><div class=\"w-full h-full rounded-full overflow-hidden border-4\" style=\"border-color: var(--game-ui-darker)\"><img src=\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\" alt=\"Character portrait\" class=\"w-full h-full object-cover\"></div></div><div class=\"w-full mt-20 mb-2 text-center\"><h2 class=\"text-white text-lg font-medium\">
+</h2></div><div class=\"w-full\">
+</div></div>
+<div class=\"w-full mb-2\"><div class=\"flex items-center gap-1 mb-1\"><span class=\"text-xs text-white\">
+: 
+/
+</span></div><div class=\"w-full h-3 bg-black/20 rounded-full overflow-hidden\">
+<div class=\"
+\"></div></div></div>
+<div class=\"grid grid-rows-5 gap-2\">
+</div>
+<button class=\"rounded-lg p-2.5 flex items-center justify-center gap-2 text-sm transition-colors hover:brightness-110\" style=\"background-color: var(--game-ui-darker); color: white;\">
+</button>

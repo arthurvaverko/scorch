@@ -13,5 +13,6 @@ server:
 	--misc.clean_on_exit true
 
 dev:
-	make server templ
-
+	@echo "Starting server and templ..."
+	@$(MAKE) server & $(MAKE) templ
+	@wait

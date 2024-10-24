@@ -3,11 +3,12 @@ package main
 
 import (
 	"context"
+	"net/http"
+
 	"github.com/arthurvaverko/imaginerium/components"
 	"github.com/arthurvaverko/imaginerium/lib/log"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"net/http"
 )
 
 func main() {
@@ -22,17 +23,11 @@ func main() {
 	r.Get("/", handleIndex)
 
 	log.Info(ctx, "Starting server on :3000")
-	log.Info(ctx, "Starting server on :3000")
-	log.Info(ctx, "Starting server on :3000")
-	log.Info(ctx, "Starting server on :3000")
-	log.Info(ctx, "Starting server on :3000")
-	log.Info(ctx, "Starting server on :3000")
-	log.Info(ctx, "Starting server on :3000")
 	http.ListenAndServe(":3000", r)
 }
 
 func handleIndex(w http.ResponseWriter, r *http.Request) {
-	gameState := components.GameState{
+	gameState := components.GameScene{
 		StoryLines: []string{
 			"You find yourself in a dimly lit ancient temple.",
 			"Intricate carvings cover the weathered stone walls.",
