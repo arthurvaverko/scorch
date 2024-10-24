@@ -3,25 +3,12 @@ package main
 
 import (
 	"context"
+	"github.com/arthurvaverko/imaginerium/components"
 	"github.com/arthurvaverko/imaginerium/lib/log"
-	"net/http"
-
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"net/http"
 )
-
-type Character struct {
-	Name    string
-	HP      int
-	MaxHP   int
-	Mana    int
-	MaxMana int
-}
-
-type GameState struct {
-	StoryLines []string
-	Character  Character
-}
 
 func main() {
 	ctx := context.Background()
@@ -45,14 +32,14 @@ func main() {
 }
 
 func handleIndex(w http.ResponseWriter, r *http.Request) {
-	gameState := GameState{
+	gameState := components.GameState{
 		StoryLines: []string{
 			"You find yourself in a dimly lit ancient temple.",
 			"Intricate carvings cover the weathered stone walls.",
 			"A mysterious altar glows faintly in the distance.",
 			"The air is thick with the scent of age-old incense.",
 		},
-		Character: Character{
+		Character: components.Character{
 			Name:    "John Constantine",
 			HP:      80,
 			MaxHP:   100,
@@ -61,6 +48,6 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 		},
 	}
 
-	component := Layout(gameState)
+	component := components.Layout(gameState)
 	component.Render(r.Context(), w)
 }

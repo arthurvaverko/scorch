@@ -1,5 +1,18 @@
-package main
+package components
 import "fmt"
+
+type GameState struct {
+	StoryLines []string
+	Character  Character
+}
+
+type Character struct {
+	Name    string
+	HP      int
+	MaxHP   int
+	Mana    int
+	MaxMana int
+}
 
 templ Layout(state GameState) {
     <!DOCTYPE html>
@@ -10,7 +23,7 @@ templ Layout(state GameState) {
         <title>Adventure Game</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
-            :root {
+            html {
                 --game-primary: #E87C65;
                 --game-secondary: #7CC9D6;
                 --game-tertiary: #8B5E3C;

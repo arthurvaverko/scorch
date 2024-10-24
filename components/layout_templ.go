@@ -41,7 +41,7 @@ func Layout(state GameState) templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Adventure Game</title><script src=\"https://cdn.tailwindcss.com\"></script><style>\n            :root {\n                --game-primary: #E87C65;\n                --game-secondary: #7CC9D6;\n                --game-tertiary: #8B5E3C;\n                --game-bg: #2A4858;\n                --game-ui-base: #9B8B7A;\n                --game-ui-darker: #786D5F;\n            }\n        </style></head><body>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Adventure Game</title><script src=\"https://cdn.tailwindcss.com\"></script><style>\n            html {\n                --game-primary: #E87C65;\n                --game-secondary: #7CC9D6;\n                --game-tertiary: #8B5E3C;\n                --game-bg: #2A4858;\n                --game-ui-base: #9B8B7A;\n                --game-ui-darker: #786D5F;\n            }\n        </style></head><body>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
