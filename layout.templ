@@ -67,8 +67,8 @@ templ characterStats(char Character) {
         </div>
 
         <div class="w-full">
-            @statBar("HP", char.HP, char.MaxHP, "#E87C65")
-            @statBar("Mana", char.Mana, char.MaxMana, "#7CC9D6")
+            @statBar("HP", char.HP, char.MaxHP, "var(--game-primary)")
+            @statBar("Mana", char.Mana, char.MaxMana, "var(--game-secondary)")
         </div>
     </div>
 }

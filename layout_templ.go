@@ -219,11 +219,11 @@ func characterStats(char Character) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = statBar("HP", char.HP, char.MaxHP, "#E87C65").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = statBar("HP", char.HP, char.MaxHP, "var(--game-primary)").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = statBar("Mana", char.Mana, char.MaxMana, "#7CC9D6").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = statBar("Mana", char.Mana, char.MaxMana, "var(--game-secondary)").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
