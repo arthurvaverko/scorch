@@ -7,7 +7,8 @@
 <p class=\"text-base leading-snug text-white font-medium\">
 </p>
 </div>
-<div class=\"flex-1 mb-3 mx-3 relative h-[50vh]\"><div class=\"absolute inset-0 flex items-center justify-center overflow-hidden rounded-lg\"><img src=\"https://fastly.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ\" alt=\"Current scene\" class=\"w-full h-full object-cover\"><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--game-ui-base)]\"></div></div></div>
+<div class=\"flex-1 mb-3 mx-3 relative h-[50vh]\"><div class=\"absolute inset-0 flex items-center justify-center overflow-hidden rounded-lg\"><img src=\"
+\" alt=\"Current scene\" class=\"w-full h-full object-cover\"><div class=\"absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--game-ui-base)]\"></div></div></div>
 <div class=\"p-4 flex flex-col items-center relative rounded-lg\" style=\"background-color: var(--game-ui-darker)\"><div class=\"absolute -top-6 w-28 h-28\"><div class=\"w-full h-full rounded-full overflow-hidden border-4\" style=\"border-color: var(--game-ui-darker)\"><img src=\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\" alt=\"Character portrait\" class=\"w-full h-full object-cover\"></div></div><div class=\"w-full mt-20 mb-2 text-center\"><h2 class=\"text-white text-lg font-medium\">
 </h2></div><div class=\"w-full\">
 </div></div>
